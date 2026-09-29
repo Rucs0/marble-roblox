@@ -20,4 +20,4 @@ Append-only. Newest at the bottom. `grep "^## \[" wiki/log.md | tail -5` for rec
 - Found: [[overview]] claimed "no code exists yet". False: Studio holds a full pre-v2 build. Created [[studio-build]] from a read of the Studio place and noted it on [[core-loop]], [[subdivision-tiers]], [[jolt]], [[map-generation]], [[shell-damage]], [[prototype-plan]], [[index]], [[overview]].
 - Found: em-dashes in `.claude/commands/*.md`, now public. Replaced. `CLAUDE.md` style rule updated: whole repo is public, not just store copy.
 - Recorded rule: commit = lint, fix, ask Zarar or Marcos, then commit (`.claude/commands/commit.md`, `CLAUDE.md`).
-- Needs a human: keep/adapt/strip pre-v2 code (overview blocking #6); 9 em-dashes in `raw/` Vault which I cannot edit.
+- Needs a human: keep/adapt/strip pre-v2 code (overview blocking #6). Raw Vault has 9 em-dashes; Zarar approved publishing it as-is.

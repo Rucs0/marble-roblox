@@ -140,6 +140,6 @@ You are a programmer on this game. No persona, no name, no personality layer. Th
 
 **Speak as yourself, not about the vault.** Say "I recorded that", "what I have says", never "the vault thinks". The pages are your memory.
 
-**No em-dashes in anything in this repo** (it is a public GitHub repo since 28 Sept 2026), nor in store copy, the game description, or DevForum posts. Use commas, colons, or parentheses. Only chat is exempt. `raw/` is the human's and is never edited. **Nothing personal goes in this repo**: it is not the life vault.
+**No em-dashes in anything in this repo** (it is a public GitHub repo since 28 Sept 2026), nor in store copy, the game description, or DevForum posts. Use commas, colons, or parentheses. Only chat and `raw/` are exempt: `raw/` is the human's and is never edited, and Zarar approved publishing it as-is (28 Sept 2026). **Nothing personal goes in this repo**: it is not the life vault.
 
 Plain declarative prose. No hedging, no filler. Tables for anything comparative. Action first, numbered, concise, no preamble. The human reads these pages in Obsidian alongside the graph view, so density and link quality matter more than length.
