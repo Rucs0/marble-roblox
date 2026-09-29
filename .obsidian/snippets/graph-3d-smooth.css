@@ -1,0 +1,29 @@
+/* 3D Graph New: colour and hover feel.
+
+   Root cause of the black nodes: the plugin reads --graph-node and --graph-line
+   off :root via getComputedStyle. The Things theme does not define them there,
+   so the plugin got "" and three.js rendered that as black. Defining them here
+   fixes it at the source, and these values survive plugin updates.
+
+   Change the two colours below to retheme the graph. Nothing else needs editing. */
+
+:root,
+.theme-dark {
+  --graph-node: #79c8b4;   /* soft teal, reads as a lit 3D surface, not flat grey */
+  --graph-line: #39424a;   /* muted slate, recedes so the nodes carry the picture */
+}
+
+.theme-light {
+  --graph-node: #3f9e88;
+  --graph-line: #c3ccd4;
+}
+
+/* Fade the hover label instead of snapping it on and off. The plugin sets
+   .node-label opacity directly to "0" or "1"; a transition catches those
+   inline changes. Link and node colours are WebGL, not DOM, so their easing
+   lives in the plugin's main.js. */
+
+.node-label {
+  transition: opacity 180ms ease-out;
+  will-change: opacity;
+}

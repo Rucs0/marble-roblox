@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Things",
+  "textFontFamily": "Fira Code",
+  "baseFontSize": 15,
+  "enabledCssSnippets": [
+    "termy-padding",
+    "graph-3d-smooth"
+  ],
+  "theme": "obsidian"
+}

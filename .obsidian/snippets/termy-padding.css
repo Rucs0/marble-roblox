@@ -1,0 +1,41 @@
+/* Termy: breathing room around the terminal text.
+   Termy's stylesheet sets .terminal-container { padding: 0 }, and the plugin
+   exposes no padding setting, so this overrides it.
+
+   The container background must match the terminal background, otherwise the
+   padding shows as a mismatched frame. It now uses --background-primary
+   directly, which is the active Obsidian theme's background, so it stays in
+   sync automatically if the theme changes. Termy's own background setting is
+   pinned to the Things value, #1c2127. */
+
+.workspace-leaf-content .terminal-container {
+  --termy-pad: 10px;
+  --termy-bg: var(--background-primary);
+
+  padding: var(--termy-pad) 4px var(--termy-pad) var(--termy-pad);
+  background-color: var(--termy-bg);
+  box-sizing: border-box;
+}
+
+/* Keep the xterm surfaces transparent so the container colour shows through
+   the padded area as one continuous background. */
+.workspace-leaf-content .terminal-container .xterm,
+.workspace-leaf-content .terminal-container .xterm-screen,
+.workspace-leaf-content .terminal-container .xterm-viewport {
+  background-color: transparent !important;
+}
+
+/* The scrollbar sits at the right edge, so the right padding is reduced above
+   and the scrollbar is slimmed instead of pushed inward. */
+.workspace-leaf-content .terminal-container .xterm-viewport::-webkit-scrollbar {
+  width: 8px;
+}
+
+.workspace-leaf-content .terminal-container .xterm-viewport::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+  border-radius: 4px;
+}
+
+.workspace-leaf-content .terminal-container .xterm-viewport::-webkit-scrollbar-track {
+  background-color: transparent;
+}

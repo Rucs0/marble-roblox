@@ -1,0 +1,5 @@
+# Obsidian internals: plugin binaries, caches, per-machine state. Never needed for wiki work.
+.obsidian/
+
+# Image attachments. Binary, not text Claude should read into context.
+raw/assets/
